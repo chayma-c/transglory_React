@@ -35,6 +35,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 min-width:400px;
+
 `
 export const logo = styled.img`
 height: ${p=>p.st.logoHeight};
@@ -42,20 +43,21 @@ width: ${p=>p.st.logoWidth};
 transition:2s;
 animation : ${p=>p.largesec ? '': move} 1.5s ;
 display: ${p=>p.large?'block':'none'};
-margin-right:40px;
+padding-left: 30px ; 
 `
 export const menu = styled.div`
 transition:2s;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
-display:flex;
 background:transparent;
 font-size: ${p=>p.st.fontSizeTitle};
 font-family: 'DM Sans', sans-serif;
+display:flex;
+justify-content:space-between;
+align-items : center ; 
+gap : 30px ; 
 `
 export const search = styled.div`
 animation : ${p=>p.smallsec ? move: 'none'} 1.5s ;
 display: ${p=>p.small?'block':'none'};
-`
-export const item = styled.div`
-margin-right:${p=>p.st.marginBig};
+padding-right : 30px ; 
 `

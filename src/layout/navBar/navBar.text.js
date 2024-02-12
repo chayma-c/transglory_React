@@ -14,6 +14,8 @@ export const data_fr = {
     },{
         title: "ABOUT",
         submenu_state: false,
+        submenu_state: true,
+        submenu: [],
     },
     {
         title: "TRACKING",
